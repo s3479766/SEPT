@@ -13,6 +13,6 @@ script:
   - dotnet restore ./OnlineBookingSystem.sln
   - sudo snap alias dotnet-sdk.dotnet dotnet
 deploy:
- provider: azure_web_apps
- skip_cleanup: true
+ - provider: azure_web_apps
+ - skip_cleanup: true
 	
